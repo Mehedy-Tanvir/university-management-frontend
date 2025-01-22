@@ -1,10 +1,11 @@
-import "./App.css";
+import MainLayout from "./components/layout/MainLayout";
+import ProtectedRoute from "./components/layout/ProtectedRoute";
 
 function App() {
   return (
-    <>
-      <h1>University management app</h1>
-    </>
+    <ProtectedRoute>
+      <MainLayout />
+    </ProtectedRoute>
   );
 }
 
